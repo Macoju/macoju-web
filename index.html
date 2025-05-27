@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MACOJU Asesoría en Prevención</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn ease 1s forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-900">
+
+  <header class="bg-blue-900 text-white p-6 text-center fade-in">
+    <img src="logo-macoju.png" alt="Logo MACOJU" class="mx-auto w-40 mb-4">
+    <h1 class="text-4xl font-bold">MACOJU Asesoría en Prevención</h1>
+    <p class="text-lg">Comprometidos con tu seguridad laboral</p>
+  </header>
+
+  <nav class="bg-red-400 text-white p-4 flex justify-center gap-8 font-semibold">
+    <a href="#servicios" class="hover:underline">Servicios</a>
+    <a href="#contacto" class="hover:underline">Contacto</a>
+  </nav>
+
+  <main class="max-w-4xl mx-auto p-6">
+    <section id="servicios" class="mb-12 fade-in">
+      <h2 class="text-2xl font-bold text-blue-800 mb-4">Servicios Ofrecidos</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>🛠️ Asesoría técnica permanente</li>
+        <li>🏗️ Visitas en terreno para verificar condiciones de seguridad y salud</li>
+        <li>📢 Capacitaciones y charlas preventivas</li>
+        <li>📞 Coordinación con organismos administradores (ACHS, Mutual, IST, ISL)</li>
+        <li>🎓 Gestión de cursos y solicitud de diplomas</li>
+        <li>🧪 Gestión de higiene ambiental y protocolos MINSAL</li>
+        <li>📋 Implementación de programas preventivos</li>
+        <li>📄 Documentación legal: Reglamento Interno, IPER, planes de emergencia, procedimientos, capacitaciones, entrega de EPP</li>
+        <li>⚠️ Investigación de accidentes e incidentes</li>
+        <li>🚧 Gestión de señalética, extintores y servicios sanitarios</li>
+        <li>🔍 Levantamiento de hallazgos para mejoras</li>
+        <li>👷‍♂️ Detección de necesidades de Elementos de Protección Personal (EPP)</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="fade-in">
+      <h2 class="text-2xl font-bold text-blue-800 mb-4">Contacto</h2>
+      <p class="mb-4">¿Tienes dudas o necesitas una propuesta personalizada? Escríbenos:</p>
+      <form action="mailto:macojuasesorias@gmail.com" method="post" enctype="text/plain" class="bg-white p-6 rounded-lg shadow-md space-y-4">
+        <div>
+          <label for="nombre" class="block font-semibold">Nombre:</label>
+          <input type="text" id="nombre" name="Nombre" required class="w-full p-2 border rounded">
+        </div>
+        <div>
+          <label for="correo" class="block font-semibold">Correo Electrónico:</label>
+          <input type="email" id="correo" name="Correo" required class="w-full p-2 border rounded">
+        </div>
+        <div>
+          <label for="mensaje" class="block font-semibold">Mensaje:</label>
+          <textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-2 border rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <a href="https://wa.me/56946809187" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg z-50 flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2M3 10h2m-2 5h2m4 0h10m-6-4l2-2m0 0l2 2m-2-2v6" />
+    </svg>
+    WhatsApp
+  </a>
+
+  <footer class="bg-blue-800 text-white text-center p-6 mt-12 fade-in">
+    <p class="text-sm">&copy; 2025 MACOJU Asesoría en Prevención | Carolina Mendoza Veneros</p>
+    <p class="text-sm">📧 macojuasesorias@gmail.com | 📞 +56 9 4680 9187</p>
+  </footer>
+
+</body>
+</html>
