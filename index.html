@@ -42,67 +42,75 @@
 
   <nav class="bg-red-400 text-white p-4 flex justify-center gap-8 font-semibold">
     <a href="#servicios" class="hover:underline">Servicios</a>
-    <a href="#sobremi" class="hover:underline">Sobre mí</a>
-    <a href="#documentos" class="hover:underline">Documentos</a>
     <a href="#contacto" class="hover:underline">Contacto</a>
   </nav>
 
-  <main class="max-w-4xl mx-auto p-6">
+  <main class="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-8">
 
-    <section id="servicios" class="mb-12 fade-in">
-      <h2 class="text-2xl font-bold text-blue-800 mb-4">Servicios Ofrecidos</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>🛠️ Asesoría técnica permanente</li>
-        <li>🏗️ Visitas en terreno para verificar condiciones de seguridad y salud</li>
-        <li>📢 Capacitaciones y charlas preventivas</li>
-        <li>📞 Coordinación con organismos administradores (ACHS, Mutual, IST, ISL)</li>
-        <li>🎓 Gestión de cursos y solicitud de diplomas</li>
-        <li>🧪 Gestión de higiene ambiental y protocolos MINSAL</li>
-        <li>📋 Implementación de programas preventivos</li>
-        <li>📄 Documentación legal: Reglamento Interno, IPER, planes de emergencia, procedimientos, capacitaciones, entrega de EPP</li>
-        <li>⚠️ Investigación de accidentes e incidentes</li>
-        <li>🚧 Gestión de señalética, extintores y servicios sanitarios</li>
-        <li>🔍 Levantamiento de hallazgos para mejoras</li>
-        <li>👷‍♂️ Detección de necesidades de Elementos de Protección Personal (EPP)</li>
-      </ul>
-    </section>
+    <div class="md:col-span-2">
+      <section class="mb-6 fade-in">
+        <p class="italic text-gray-700">📍 Trabajo dentro de la Región Metropolitana (Santiago de Chile). Para el resto del país, ofrecemos servicios online.</p>
+      </section>
 
-    <section id="sobremi" class="mb-12 fade-in">
-      <h2 class="text-2xl font-bold text-blue-800 mb-4">Sobre mí</h2>
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        <img src="carolina-mendoza-casco-blanco.jpg" alt="Carolina Mendoza" class="w-48 rounded-full border-4 border-blue-200">
-        <p>
+      <section id="servicios" class="mb-12 fade-in">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">Servicios Ofrecidos</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>🛠️ Asesoría técnica permanente</li>
+          <li>🏗️ Visitas en terreno para verificar condiciones de seguridad y salud</li>
+          <li>📢 Capacitaciones y charlas preventivas</li>
+          <li>📞 Coordinación con organismos administradores (ACHS, Mutual, IST, ISL)</li>
+          <li>🎓 Gestión de cursos y solicitud de diplomas</li>
+          <li>🧪 Gestión de higiene ambiental y protocolos MINSAL</li>
+          <li>📋 Implementación de programas preventivos</li>
+          <li>📄 Documentación legal: Reglamento Interno, IPER, planes de emergencia, procedimientos, capacitaciones, entrega de EPP</li>
+          <li>⚠️ Investigación de accidentes e incidentes</li>
+          <li>🚧 Gestión de señalética, extintores y servicios sanitarios</li>
+          <li>🔍 Levantamiento de hallazgos para mejoras</li>
+          <li>👷‍♂️ Detección de necesidades de Elementos de Protección Personal (EPP)</li>
+        </ul>
+      </section>
+
+      <section id="contacto" class="fade-in">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">Contacto</h2>
+        <p class="mb-4">¿Tienes dudas o necesitas una propuesta personalizada? Escríbenos:</p>
+        <form action="mailto:macojuasesorias@gmail.com" method="post" enctype="text/plain" class="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <div>
+            <label for="nombre" class="block font-semibold">Nombre:</label>
+            <input type="text" id="nombre" name="Nombre" required class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label for="correo" class="block font-semibold">Correo Electrónico:</label>
+            <input type="email" id="correo" name="Correo" required class="w-full p-2 border rounded">
+          </div>
+          <div>
+            <label for="mensaje" class="block font-semibold">Mensaje:</label>
+            <textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-2 border rounded"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800">Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <aside class="space-y-8">
+      <section id="sobremi" class="fade-in bg-white p-4 rounded shadow-md">
+        <h2 class="text-xl font-bold text-blue-800 mb-2">Sobre mí</h2>
+        <img src="carolina-mendoza-casco-blanco.jpg" alt="Carolina Mendoza" class="w-32 mx-auto rounded-full border-4 border-blue-200 mb-3">
+        <p class="text-sm text-justify">
           Hola, soy <strong>Carolina Mendoza Veneros</strong>, Ingeniero en Prevención de Riesgos y Técnico en Enfermería con más de 10 años de experiencia en salud laboral, seguridad en la construcción, sector industrial y educación.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section id="documentos" class="mb-12 fade-in">
-      <h2 class="text-2xl font-bold text-blue-800 mb-4">Acceso a Documentos</h2>
-      <p class="mb-4">Para descargar nuestros recursos, por favor completa este formulario:</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIHjJ2D4_fsUTeaRqrHzDu6bF0HtB42jba1nB0YII6QDO7-A/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-    </section>
-
-    <section id="contacto" class="fade-in">
-      <h2 class="text-2xl font-bold text-blue-800 mb-4">Contacto</h2>
-      <p class="mb-4">¿Tienes dudas o necesitas una propuesta personalizada? Escríbenos:</p>
-      <form action="mailto:macojuasesorias@gmail.com" method="post" enctype="text/plain" class="bg-white p-6 rounded-lg shadow-md space-y-4">
-        <div>
-          <label for="nombre" class="block font-semibold">Nombre:</label>
-          <input type="text" id="nombre" name="Nombre" required class="w-full p-2 border rounded">
-        </div>
-        <div>
-          <label for="correo" class="block font-semibold">Correo Electrónico:</label>
-          <input type="email" id="correo" name="Correo" required class="w-full p-2 border rounded">
-        </div>
-        <div>
-          <label for="mensaje" class="block font-semibold">Mensaje:</label>
-          <textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-2 border rounded"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800">Enviar</button>
-      </form>
-    </section>
+      <section id="documentos" class="fade-in bg-white p-4 rounded shadow-md">
+        <h2 class="text-xl font-bold text-blue-800 mb-2">📄 Acceso a Documentos</h2>
+        <p class="text-sm mb-2">Para descargar recursos, por favor completa este formulario:</p>
+        <a href="#formulario-documentos" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400 font-semibold">Ir al Formulario</a>
+      </section>
+    </aside>
   </main>
+
+  <section id="formulario-documentos" class="max-w-4xl mx-auto p-6 fade-in">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIHjJ2D4_fsUTeaRqrHzDu6bF0HtB42jba1nB0YII6QDO7-A/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  </section>
 
   <a href="https://wa.me/56946809187" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg z-50 flex items-center gap-2">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
