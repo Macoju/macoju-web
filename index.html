@@ -16,9 +16,21 @@
       0% { opacity: 0; }
       100% { opacity: 1; }
     }
+    .cinta-seguridad {
+      background-image: repeating-linear-gradient(
+        45deg,
+        #facc15,
+        #facc15 10px,
+        #000 10px,
+        #000 20px
+      );
+      height: 10px;
+    }
   </style>
 </head>
 <body class="bg-yellow-50 text-gray-900">
+
+  <div class="cinta-seguridad"></div>
 
   <header class="bg-blue-900 text-white p-6 text-center fade-in">
     <img src="logo-macoju.png" alt="Logo MACOJU" class="mx-auto w-40 mb-4">
@@ -26,12 +38,17 @@
     <p class="text-lg">Comprometidos con tu seguridad laboral</p>
   </header>
 
+  <div class="cinta-seguridad"></div>
+
   <nav class="bg-red-400 text-white p-4 flex justify-center gap-8 font-semibold">
     <a href="#servicios" class="hover:underline">Servicios</a>
+    <a href="#sobremi" class="hover:underline">Sobre mí</a>
+    <a href="#documentos" class="hover:underline">Documentos</a>
     <a href="#contacto" class="hover:underline">Contacto</a>
   </nav>
 
   <main class="max-w-4xl mx-auto p-6">
+
     <section id="servicios" class="mb-12 fade-in">
       <h2 class="text-2xl font-bold text-blue-800 mb-4">Servicios Ofrecidos</h2>
       <ul class="list-disc pl-6 space-y-2">
@@ -48,6 +65,22 @@
         <li>🔍 Levantamiento de hallazgos para mejoras</li>
         <li>👷‍♂️ Detección de necesidades de Elementos de Protección Personal (EPP)</li>
       </ul>
+    </section>
+
+    <section id="sobremi" class="mb-12 fade-in">
+      <h2 class="text-2xl font-bold text-blue-800 mb-4">Sobre mí</h2>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img src="carolina-mendoza-casco-blanco.jpg" alt="Carolina Mendoza" class="w-48 rounded-full border-4 border-blue-200">
+        <p>
+          Hola, soy <strong>Carolina Mendoza Veneros</strong>, Ingeniero en Prevención de Riesgos y Técnico en Enfermería con más de 10 años de experiencia en salud laboral, seguridad en la construcción, sector industrial y educación.
+        </p>
+      </div>
+    </section>
+
+    <section id="documentos" class="mb-12 fade-in">
+      <h2 class="text-2xl font-bold text-blue-800 mb-4">Acceso a Documentos</h2>
+      <p class="mb-4">Para descargar nuestros recursos, por favor completa este formulario:</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIHjJ2D4_fsUTeaRqrHzDu6bF0HtB42jba1nB0YII6QDO7-A/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
     </section>
 
     <section id="contacto" class="fade-in">
